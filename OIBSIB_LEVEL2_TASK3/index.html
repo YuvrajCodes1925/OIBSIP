@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>To-Do List</h1>
+      <button id="toggle-dark-mode">Toggle Dark Mode</button>
+    </header>
+    <div id="add-task">
+      <input type="text" id="new-task-title" placeholder="Enter task title">
+      <textarea id="new-task-description" placeholder="Enter task description (optional)"></textarea>
+      <label for="due-date">Due Date:</label>
+      <input type="date" id="due-date">
+      <label for="priority">Priority:</label>
+      <select id="priority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <button id="add-task-btn">Add Task</button>
+    </div>
+
+    <div id="filter-search">
+      <input type="text" id="search" placeholder="Search tasks...">
+      <button id="sort-date-btn">Sort by Due Date</button>
+      <button id="sort-priority-btn">Sort by Priority</button>
+    </div>
+
+    <h2>Pending Tasks</h2>
+    <ul id="pending-tasks"></ul>
+
+    <h2>Completed Tasks</h2>
+    <ul id="completed-tasks"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
